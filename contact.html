@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Profil</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CONTACT SECTION -->
+<section class="container contact-section">
+  <h2 class="text-center mb-4">Hubungi Saya</h2>
+
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="contact-card">
+
+        <form onsubmit="return kirimPesan()">
+          <div class="mb-3">
+            <label class="form-label">Nama</label>
+            <input type="text" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Pesan</label>
+            <textarea class="form-control" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">
+            Kirim Pesan
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  function kirimPesan() {
+    alert("Pesan berhasil dikirim! Terima kasih sudah menghubungi saya 😊");
+    return false;
+  }
+</script>
+
+</body>
+</html>
